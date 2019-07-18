@@ -2,16 +2,20 @@ import Vue from "vue";
 import Router from "vue-router";
 
 const Index = () => import("@/Index");
+const Curriculo = () => import("@/Curriculo");
 
 Vue.use(Router);
-let t = localStorage.getItem("token");
 let router = new Router({
-    routes:[
-       
+    routes:[       
         {
             path:"/",
             name:"Index",
-            component: !t ? Index : Home
+            component: Index
+        },
+        {
+            path:"/",
+            name:"Curriculo",
+            component:Curriculo
         }
     ]
 });

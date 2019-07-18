@@ -1,5 +1,5 @@
-<template>
-<div class="cvd" style="margin-left:10%">
+<template >
+<div  class="cvd" style="margin-left:10%">
     <div class="row">
         <div class="col-sm image" style="left:60px; top:-30px">
             <img src="../assets/cv.png" width="120%;" style="margin-left:-30%"/>

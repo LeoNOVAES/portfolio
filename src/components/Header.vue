@@ -7,10 +7,10 @@
 
     <b-collapse id="nav-collapse" is-nav class="bodyMenu">
       <b-navbar-nav  style="padding-left:25%">
-        <b-nav-item href="#" style="font-weight:bold; padding-right:10%">Home</b-nav-item>
-        <b-nav-item href="#" style="font-weight:bold; padding-right:10%">Sobre</b-nav-item>
-         <b-nav-item href="#" style="font-weight:bold; padding-right:10%">Link</b-nav-item>
-        <b-nav-item href="#" style="font-weight:bold; padding-right:10%">Disabled</b-nav-item>
+        <b-nav-item href="#banner" style="font-weight:bold; padding-right:10%">Home</b-nav-item>
+        <b-nav-item href="#sobre" style="font-weight:bold; padding-right:10%">Sobre</b-nav-item>
+         <b-nav-item href="#habilidades" style="font-weight:bold; padding-right:10%">Habilidades</b-nav-item>
+        <b-nav-item href="#contato" style="font-weight:bold; padding-right:10%">Contato</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -20,11 +20,12 @@
 </template>
 
 <script>
- export default { 
+ export default{ 
+  data(){
+    return{
 
-     data(){
-         
-     }
+    }
+  }
  }
 </script>
 
