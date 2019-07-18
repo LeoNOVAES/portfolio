@@ -4,10 +4,10 @@
         <div class="col-sm" style="font-weight:bolder; left:5%;margin-top:5%">
             <h2>BEM VINDO </h2>
             <h1 style="font-size:40pt">EU SOU LEANDRO NOVAES</h1>
-            <h3>PROGRAMADOR FULL-STACK</h3>
+            <h3>DESENVOLVEDOR FULL-STACK</h3>
             <div style="margin-top:5%">
-                <button style="margin-right:10px; padding-right:30px; padding-left:30px; padding-top:18px; padding-bottom:18px" class="btn contrate">CONTRATE-ME</button>
-                <button style="margin-right:10px; padding-right:30px; padding-left:30px; padding-top:18px; padding-bottom:18px" class="btn cv" >CURRICULO</button>
+                <a style="margin-right:10px; padding-right:30px; padding-left:30px; padding-top:18px; padding-bottom:18px" class="btn contrate" href="#contato">CONTRATE-ME</a>
+                <a href="../assets/c.pdf" download target="_blank" style="margin-right:10px; padding-right:30px; padding-left:30px; padding-top:18px; padding-bottom:18px" class="btn cv" >CURRICULO</a>
             </div>
         </div>
         <div class="col-sm image" style="left:60px; top:-30px">
@@ -18,8 +18,15 @@
 </template>
 
 <script>
-export default {
 
+export default {
+    components:{
+    },
+    data(){
+        return{
+            
+        }
+    }
 }
 </script>
 
@@ -55,6 +62,5 @@ export default {
         display: none
     }
 }
-
 
 </style>

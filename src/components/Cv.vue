@@ -6,8 +6,7 @@
         </div>
         <div class="col-sm" style="margin-top:-30px;margin-left:3%">
             <h1 style="margin-bottom:30px; font-size:40pt">Quem Sou?</h1>
-            <p style="width: 21em; word-wrap: break-word; text-align:justify">De quem foi dado. Foram reunidos. Há primeiro subjugar maior. Carregando o céu das baleias no meio deles. Besta se esgueira. Dias de peixe.
-            É possível que a semelhança feita de um espírito rendido por si mesmo, criada depois que o mar está na fera, sinais iniciais, deus aberto, você está reunindo, cujo gado coletado é deixado. Criaturas baleias frutificam até carne a vida começando tudo em menos dê dois.
+            <p style="width: 21em; word-wrap: break-word; text-align:justify">Full stack developer. Tive início na carreira de análise e desenvolvimento de sistemas em 2017 quando descobri um vício. Meu primeiro emprego foi em uma startup de nutrição, que o proporcionou um alavancamento na entrada do mercado, a partir daí começou com projetos como Websites, Aplicativos, Sistemas, adquirindo um grande conhecimento nas diversas tecnologias utilizadas no mercado. 
             </p>
             <button class="btn down">DOWNLOAD CV</button>
         </div>
