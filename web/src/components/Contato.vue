@@ -10,18 +10,18 @@
             <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    <input v-model="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="NOME">
+                    <input type="text" v-model="nome" class="form-control" id="nome" placeholder="NOME">
                 </div>
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
-                    <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                    <textarea v-model="mensagem" class="form-control" id="mensagem" rows="3"></textarea>
                 </div>
               
-                <button type="submit" class="btn btn-dark">ENVIAR</button>
+                <button type="submit" class="btn btn-dark" @click="sendEmail">ENVIAR</button>
             </form>
         </div>
     </div>
@@ -30,7 +30,33 @@
 
 <script>
 export default {
+    data(){
+        return{
+            email:"",
+            nome:"",
+            mensagem:""
+        }
+    },
+    methods:{
+        async sendEmail(){
+            let res;
 
+            const user = {
+                email:this.$data.email,
+                nome:this.$data.nome,
+                mensagem:this.$data.mensagem
+            }
+
+            const req = await fetch('http://149.56.185.80:8084/cliente/email',{
+                method:'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                 },
+                body:JSON.stringify(user)
+            });
+        }
+    }
 }
 </script>
 

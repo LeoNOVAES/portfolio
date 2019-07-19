@@ -7,7 +7,7 @@
             <h3>DESENVOLVEDOR FULL-STACK</h3>
             <div style="margin-top:5%">
                 <a style="margin-right:10px; padding-right:30px; padding-left:30px; padding-top:18px; padding-bottom:18px" class="btn contrate" href="#contato">CONTRATE-ME</a>
-                <a href="../assets/c.pdf" download target="_blank" style="margin-right:10px; padding-right:30px; padding-left:30px; padding-top:18px; padding-bottom:18px" class="btn cv" >CURRICULO</a>
+                <a href="http://localhost:8084/api/curriculo" target="_blank" style="margin-right:10px; padding-right:30px; padding-left:30px; padding-top:18px; padding-bottom:18px" class="btn cv" >CURRICULO</a>
             </div>
         </div>
         <div class="col-sm image" style="left:60px; top:-30px">
@@ -20,11 +20,11 @@
 <script>
 
 export default {
+
     components:{
     },
     data(){
         return{
-            
         }
     }
 }
