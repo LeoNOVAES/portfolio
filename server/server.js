@@ -30,10 +30,9 @@ app.listen(8084, ()=>{
 });
 
 app.post('/cliente/email', (req, res) => {
-    console.log(req.body);
     sgMail.send({
-        to:req.body.email,
-        from: "leandrofern.novaes@gmail.com",
+        to: "leandrofern.novaes@gmail.com",
+        from: req.body.email,
         subject:req.body.nome,
         html:req.body.mensagem
     })

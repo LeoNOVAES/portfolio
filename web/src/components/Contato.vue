@@ -47,7 +47,7 @@ export default {
                 mensagem:this.$data.mensagem
             }
 
-            const req = await fetch('http://149.56.185.80:8084/cliente/email',{
+            const req = await fetch('http://localhost:8084/cliente/email',{
                 method:'POST',
                 headers: {
                     'Accept': 'application/json',
