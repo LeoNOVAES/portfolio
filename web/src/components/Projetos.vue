@@ -36,18 +36,28 @@ export default {
                     desc:"Plataforma feita para salvamento e uploads de links, videos ou fotos",
                     tecnologias:{
                         back:'NODE JS',
-                        front:'VUE',
+                        front:'VUE JS',
                         bd:'MYSQL'
                     }
                 },
                 {
                     titulo:"Search Any",
                     url:require('../assets/search.png'),
-                    desc:"Plataforma com fins acadêmicos, para busca de qualuqer assunto",
+                    desc:"Plataforma com fins acadêmicos, para busca de qualquer assunto",
                     tecnologias:{
                         back:'NODE JS',
-                        front:'VUE',
-                        bd:'Integração com APIS comerciais'
+                        front:'VUE JS',
+                        bd:'APIS Externas'
+                    }
+                },
+                {
+                    titulo:"Biblioteca Virtual",
+                    url:require('../assets/bibli.png'),
+                    desc:"Biblioteca Virtual ,um projeto acadêmicos para emprestimo de livros",
+                    tecnologias:{
+                        back:"GOLANG",
+                        front:"BOOTSTRAP E CSS",
+                        bd:"MYSQL"
                     }
                 }
             ]
