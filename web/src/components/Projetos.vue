@@ -9,7 +9,9 @@
     <div class="row">
         <div class="col-lg-4" v-for="(project,key) in projects" :key="key">
             <div class="card" style="width: 22rem; ">
-            <img class="card-img-top" :src="project.url"  alt="Card image cap">
+            <div class="imgProj" style="background-color: #FF6347; overflow:hidden;">    
+                <a :href="project.link" target="_blank"><img class="card-img-top" :src="project.url"  alt="Card image cap"></a>
+            </div>
             <div class="card-body">
                 <h5 class="card-title">{{ project.titulo }}</h5>
                 <p class="card-text">{{ project.desc }}</p>
@@ -32,6 +34,7 @@ export default {
             projects:[
                 {
                     titulo:"Acv Link",
+                    link:"http://149.56.185.80:8083/",
                     url:require('../assets/acv.png'),
                     desc:"Plataforma feita para salvamento e uploads de links, videos ou fotos",
                     tecnologias:{
@@ -42,6 +45,7 @@ export default {
                 },
                 {
                     titulo:"Search Any",
+                    link:"http://149.56.185.80:7000/",
                     url:require('../assets/search.png'),
                     desc:"Plataforma com fins acadêmicos, para busca de qualquer assunto",
                     tecnologias:{
@@ -52,8 +56,9 @@ export default {
                 },
                 {
                     titulo:"Biblioteca Virtual",
+                    link:"https://github.com/LeoNOVAES/biblioteca",
                     url:require('../assets/bibli.png'),
-                    desc:"Biblioteca Virtual ,um projeto acadêmicos para emprestimo de livros",
+                    desc:"Biblioteca Virtual, um projeto acadêmicos para emprestimo de livros",
                     tecnologias:{
                         back:"GOLANG",
                         front:"BOOTSTRAP E CSS",
@@ -79,4 +84,11 @@ export default {
     word-wrap: break-word;
         
 }
+
+.imgProj{
+    
+    background-color: #FF6347;
+}
+
+
 </style>
