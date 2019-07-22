@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-4" v-for="(project,key) in projects" :key="key">
+        <div class="col-lg-4 projects" v-for="(project,key) in projects" :key="key">
             <div class="card" style="width: 22rem; ">
             <div class="imgProj" style="background-color: #FF6347; overflow:hidden;">    
                 <a :href="project.link" target="_blank"><img class="card-img-top" :src="project.url"  alt="Card image cap"></a>
@@ -90,5 +90,7 @@ export default {
     background-color: #FF6347;
 }
 
-
+.projects:hover{
+     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+}
 </style>
