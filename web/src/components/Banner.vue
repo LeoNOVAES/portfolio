@@ -1,7 +1,7 @@
 <template>
 <div class=" banner">
     <div class="row">
-        <div class="col-sm" style="font-weight:bolder; left:5%;margin-top:5%">
+        <div class="col-sm ban" style="font-weight:bolder; left:5%;margin-top:5%">
             <h2>BEM VINDO </h2>
             <h1 style="font-size:40pt">EU SOU LEANDRO NOVAES</h1>
             <h3>DESENVOLVEDOR FULL-STACK</h3>

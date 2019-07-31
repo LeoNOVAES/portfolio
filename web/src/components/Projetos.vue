@@ -9,11 +9,12 @@
     <div class="row">
         <div class="col-lg-4 projects" v-for="(project,key) in projects" :key="key">
             <div class="card" style="width: 22rem; ">
-            <div class="imgProj" style="background-color: #FF6347; overflow:hidden;">    
-                <a :href="project.link" target="_blank"><img class="card-img-top" :src="project.url"  alt="Card image cap"></a>
+            <div>    
+                <div class="imgProj"><h5 class="card-title">{{ project.titulo }}</h5><a class="btn btn-light" id="btnProj" :href="project.link" target="_blank">Visite o Site</a></div>
+                <a :href="project.link" target="_blank"><img class="card-img-top"  :src="project.url"  alt="Card image cap"></a>
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ project.titulo }}</h5>
+                
                 <p class="card-text">{{ project.desc }}</p>
             </div>
             <div class="list-group list-group-flush">
@@ -86,11 +87,41 @@ export default {
 }
 
 .imgProj{
-    
-    background-color: #FF6347;
+    background-color: rgba(255, 71, 0, 0.8);
+    position:absolute;
+    width:100%;
+    height: 41%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.projects:hover .imgProj{
+    opacity: 1;
+    transition: 0.5s ease;
 }
 
 .projects:hover{
-     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.imgProj h5{
+    color:#ffffff;
+    font-size: 25pt
+}
+
+#btnProj:hover{
+    background-color:#ffffff;
+    color:rgba(255, 71, 0, 1);
+    border:2px solid rgba(255, 71, 0, 1);
+}
+
+#btnProj{
+    border-radius: 13px;
+    padding:15px;
+    background-color:rgba(255, 71, 0, 1);
+    color:#ffffff
 }
 </style>

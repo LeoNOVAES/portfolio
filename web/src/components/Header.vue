@@ -7,10 +7,11 @@
 
     <b-collapse id="nav-collapse" is-nav class="bodyMenu">
       <b-navbar-nav  style="padding-left:25%">
-        <b-nav-item href="#banner" style="font-weight:bold; padding-right:10%">Home</b-nav-item>
-        <b-nav-item href="#sobre" style="font-weight:bold; padding-right:10%">Sobre</b-nav-item>
-         <b-nav-item href="#habilidades" style="font-weight:bold; padding-right:10%">Habilidades</b-nav-item>
-        <b-nav-item href="#contato" style="font-weight:bold; padding-right:10%">Contato</b-nav-item>
+        <b-nav-item  style="font-weight:bold; padding-right:10%"  @click="scroll()">Home</b-nav-item>
+        <b-nav-item  style="font-weight:bold; padding-right:10%"  @click="scroll('sobre')">Sobre</b-nav-item>
+        <b-nav-item  style="font-weight:bold; padding-right:10%"  @click="scroll('compet')">Habilidades</b-nav-item>
+        <b-nav-item  style="font-weight:bold; padding-right:10%"  @click="scroll('projetos')">Projetos</b-nav-item>
+        <b-nav-item style="font-weight:bold; padding-right:10%" @click="scroll('contato')" > Contato</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -25,6 +26,29 @@
     return{
 
     }
+  },
+  methods:{
+    scroll(page){
+
+      switch(page){
+        case 'projetos':
+          window.scroll({top: 2900, left: 0, behavior: 'smooth' });
+          break;
+        case 'contato':
+          window.scroll({top: 3700, left: 0, behavior: 'smooth' });
+          break;
+        case 'compet':
+          window.scroll({top: 1680, left: 0, behavior: 'smooth' });
+          break;
+        case 'sobre':
+          window.scroll({top: 900, left: 0, behavior: 'smooth' });
+          break;
+        default:
+          window.scroll({top: 1, left: 0, behavior: 'smooth' });
+          break;      
+      }
+      
+    } 
   }
  }
 </script>

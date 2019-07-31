@@ -5,6 +5,10 @@ const bodyParser = require("body-parser");
 const sgMail = require("@sendgrid/mail");
 const fs = require("fs");
 
+const connection = require("./conn")();
+
+let visits = 0;
+
 app.use(bodyParser.urlencoded({
     extended: true
 }));
@@ -60,3 +64,25 @@ app.get("/api/download",(req,res)=>{
     let pdf = './static/pdf/c.pdf';
     return res.download(pdf);
 });
+
+app.get("/api/visita/:ip",(req,res)=>{
+    
+    const ip = {
+        ip:req.params.ip
+    };
+    console.log(ip)
+    connection.query('INSERT INTO ips SET ?',ip,(err,r)=>{
+        if(err){
+            return res.json({message:err});
+        }else{
+            connection.query("SELECT * FROM ips ORDER BY id DESC",(err, results)=>{
+                console.log(results);
+                visits = ++visits; 
+            console.log("O numero de visitas é"+ visits);
+            return res.json({visitas:visits, ips:results});
+            })
+            
+        }
+    });
+});
+
