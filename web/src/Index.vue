@@ -33,7 +33,7 @@ export default {
        Footer
     },
     mounted(){
-        this.initial();
+       // this.initial();
     },
     methods:{
         async initial(){

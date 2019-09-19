@@ -132,10 +132,22 @@ export default {
                     desc:"O Firebase é uma plataforma de desenvolvimento, hioje consigo integrar minhas aplicações com o firebase graças a sua documentação e algusn cursos no youtube."
                 },
                 {
-                    nome:"Ubuntu",
+                    nome:"Docker",
+                    url:require("../assets/docker.svg"),
+                    categoria:"outros",
+                    desc:"Docker Containers"
+                },
+                {
+                    nome:"Ubuntu Server",
                     url:require("../assets/ubuntu.svg"),
                     categoria:"outros",
                     desc:"Ubuntu é um sistema operacional ou sistema operativo de código aberto, construído a partir do núcleo Linux, Hoje utilizo essa distro para servir minha aplicações e trabalhar localmente."
+                },
+                {
+                    nome:"CentOS",
+                    url:require("../assets/centos.png"),
+                    categoria:"outros",
+                    desc:"CentOS"
                 }
             ]
         }

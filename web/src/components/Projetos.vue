@@ -33,7 +33,7 @@ export default {
     data(){
         return{
             projects:[
-                {
+                /*{
                     titulo:"Acv Link",
                     link:"http://149.56.185.80:8083/",
                     url:require('../assets/acv.png'),
@@ -42,6 +42,17 @@ export default {
                         back:'NODE JS',
                         front:'VUE JS',
                         bd:'MYSQL'
+                    }
+                },*/
+                {
+                    titulo:"Eventos",
+                    link:"http://149.56.185.80:8080/",
+                    url:require('../assets/events.png'),
+                    desc:"Plataforma Cadastro e convites para eventos!",
+                    tecnologias:{
+                        back:'NODE JS',
+                        front:'VUE JS',
+                        bd:'MongoDB'
                     }
                 },
                 {
